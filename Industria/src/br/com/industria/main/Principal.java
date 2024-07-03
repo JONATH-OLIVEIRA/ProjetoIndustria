@@ -20,30 +20,32 @@ public class Principal {
 
         removerFuncionarioPorNome(funcionarios, "João");
 
-        System.out.println("Todos os funcionários:");
+        System.out.println("*****Todos os funcionários:*****");
         imprimirFuncionarios(funcionarios);
 
         aumentarSalarios(funcionarios, new BigDecimal("0.10"));
 
-        System.out.println("*******************NOVOS SALARIOS***************************");
+        System.out.println("*****NOVOS SALARIOS*****");
         imprimirFuncionarios(funcionarios);
 
         Map<String, List<Funcionario>> funcionariosPorFuncao = agruparPorFuncao(funcionarios);
 
-        System.out.println("Funcionários agrupados por função:");
+        System.out.println("*****Funcionários agrupados por função:*****");
         imprimirFuncionariosAgrupados(funcionariosPorFuncao);
 
-        System.out.println("Funcionários que fazem aniversário no mês 10 e 12:");
+        System.out.println("*****Funcionários que fazem aniversário no mês 10 e 12:*****");
         imprimirAniversariantes(funcionarios, 10);
         imprimirAniversariantes(funcionarios, 12);
 
         imprimirFuncionarioMaisVelho(funcionarios);
 
-        System.out.println("Funcionários em ordem alfabética:");
+        System.out.println("*****Funcionários em ordem alfabética:*****");
         imprimirFuncionariosOrdenados(funcionarios);
-
+        
+        System.out.println("*****Total Salarios:*****");
         imprimirTotalSalarios(funcionarios);
-
+        
+        System.out.println("*****Quantidade de Salario Minimo:*****");
         imprimirSalariosMinimos(funcionarios);
     }
 
