@@ -25,7 +25,6 @@ public class Principal {
 
         aumentarSalarios(funcionarios, new BigDecimal("0.10"));
 
-        System.out.println("************************************************************");
         System.out.println("*******************NOVOS SALARIOS***************************");
         imprimirFuncionarios(funcionarios);
 
